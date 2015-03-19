@@ -42,10 +42,13 @@ public class DigitaleMenukaart {
         }
 
         Voorgerecht voorgerecht = new Voorgerecht(true, "tomatensoep", 4, true, "chinese tomatensoep", 5.20, 100);
+        menuitems.add(voorgerecht);
 
         Hoofdgerecht hoofdgerecht = new Hoofdgerecht("Pasta carbonara", "paprika,champignons, uien, rookworst", 5, true, "pasta carbonara", 6.0, 150);
+        menuitems.add(hoofdgerecht);
 
         Nagerecht nagerecht = new Nagerecht("Appeltaart", " gezoete appels, honing , abrikozengelei", 4, true, "oma's appeltaart", 5, 200);
+        menuitems.add(nagerecht);
 
         for (int i = 0; i < menuitems.size(); i++) {
             System.out.println(menuitems.get(i));
