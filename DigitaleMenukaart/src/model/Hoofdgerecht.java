@@ -10,7 +10,8 @@ package model;
  * @author Aladin
  */
 public class Hoofdgerecht extends Gerecht {
-    private String pasta; 
+
+    private String pasta;
     private String ingrediënten;
 
     public Hoofdgerecht(String pasta, String ingrediënten, int rating, boolean isVegetarisch, String naam, double prijs, int calorieen) {
@@ -18,14 +19,10 @@ public class Hoofdgerecht extends Gerecht {
         this.pasta = pasta;
         this.ingrediënten = ingrediënten;
     }
-    
-
-  
-
 
     @Override
     public String toString() {
-       return super.toString() + "Pasta: " +pasta+ "\nBestaat uit: " + ingrediënten;
+        return super.toString() + "Pasta: " + pasta + "\nBestaat uit: " + ingrediënten;
     }
 
 }

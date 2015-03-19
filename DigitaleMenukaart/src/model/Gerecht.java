@@ -10,6 +10,7 @@ package model;
  * @author Aladin
  */
 public class Gerecht extends MenuItem {
+
     private int rating;
     private boolean isVegetarisch;
 
@@ -19,26 +20,20 @@ public class Gerecht extends MenuItem {
         this.isVegetarisch = isVegetarisch;
     }
 
- 
-
-  
-
     public boolean isIsVegetarisch() {
-       
-     
-        if (isVegetarisch = true){
+
+        if (isVegetarisch = true) {
             System.out.println("Gerecht is vegetarisch ");
-        }else {
+        } else {
             System.out.println("");
-          }    
+        }
         return false;
-    
+
     }
 
     @Override
     public String toString() {
         return super.toString() + rating + " steren\n" + isIsVegetarisch();
     }
-
 
 }

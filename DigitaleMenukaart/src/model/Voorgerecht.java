@@ -32,7 +32,7 @@ public class Voorgerecht extends Gerecht {
 
     @Override
     public String toString() {
-        return "\nSoort soep: " + soortSoep + "\t"+isRauwkost() + isIsVegetarisch(); //To change body of generated methods, choose Tools | Templates.
+        return "\nSoort soep: " + soortSoep + "\t" + isRauwkost() + isIsVegetarisch(); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

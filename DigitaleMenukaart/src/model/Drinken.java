@@ -9,8 +9,8 @@ package model;
  *
  * @author Aladin
  */
-public class Drinken extends MenuItem{
-   
+public class Drinken extends MenuItem {
+
     private boolean koudOfWarm;
     private boolean metPrik;
 
@@ -18,14 +18,14 @@ public class Drinken extends MenuItem{
         super(naam, prijs, calorieen);
         this.koudOfWarm = koudOfWarm;
         this.metPrik = metPrik;
-        
-        
+
     }
-   public boolean isKoudOfWarm() {
-     
-        if (koudOfWarm = true){
+
+    public boolean isKoudOfWarm() {
+
+        if (koudOfWarm = true) {
             System.out.println("warm");
-        }else{
+        } else {
             System.out.println("koud");
         }
         return false;
@@ -34,11 +34,10 @@ public class Drinken extends MenuItem{
     public boolean isMetPrik() {
         return metPrik;
     }
-    
+
     @Override
     public String toString() {
         return "Drinken{" + "koud/Warm: " + koudOfWarm + ", Prik: " + metPrik;
     }
 
- 
 }
