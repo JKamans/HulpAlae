@@ -22,7 +22,7 @@ public class Hoofdgerecht extends Gerecht {
 
     @Override
     public String toString() {
-        return super.toString() + "Pasta: " + pasta + "\nBestaat uit: " + ingrediënten;
+        return super.toString() + "Pasta: " + pasta + "\nBestaat uit: " + ingrediënten + "\n";
     }
 
 }

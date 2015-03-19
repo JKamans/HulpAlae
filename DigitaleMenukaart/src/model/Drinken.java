@@ -31,7 +31,7 @@ public class Drinken extends MenuItem {
     @Override
     public String toString() {
         String strKoud = (koud) ? "koud" : "warm";
-        return "Drinken" + "\tKoud/warm: " + strKoud + ", Prik: " + metPrik;
+        return "Drinken" + "\tKoud/warm: " + strKoud + ", Prik: " + metPrik + "\n";
     }
 
 }

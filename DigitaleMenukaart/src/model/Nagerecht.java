@@ -21,10 +21,10 @@ public class Nagerecht extends Gerecht {
     }
 
     //public Nagerecht(String appeltaart, String string, boolean b, String omas_appeltaart, int i, int i0) {
-  //
+    //
     @Override
     public String toString() {
-        return super.toString() + "\nSoort taart: " + taart + "\tingrediënten: " + ingrediënten; //To change body of generated methods, choose Tools | Templates.
+        return super.toString() + "\nSoort taart: " + taart + "\tingrediënten: " + ingrediënten + "\n"; //To change body of generated methods, choose Tools | Templates.
     }
 
 }
