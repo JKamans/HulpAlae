@@ -11,24 +11,17 @@ package model;
  */
 public class Drinken extends MenuItem {
 
-    private boolean koudOfWarm;
+    private boolean koud;
     private boolean metPrik;
 
-    public Drinken(boolean koudOfWarm, boolean metPrik, String naam, double prijs, int calorieen) {
+    public Drinken(boolean koud, boolean metPrik, String naam, double prijs, int calorieen) {
         super(naam, prijs, calorieen);
-        this.koudOfWarm = koudOfWarm;
+        this.koud = koud;
         this.metPrik = metPrik;
-
     }
 
-    public boolean isKoudOfWarm() {
-
-        if (koudOfWarm = true) {
-            System.out.println("warm");
-        } else {
-            System.out.println("koud");
-        }
-        return false;
+    public boolean isKoud() {
+        return koud;
     }
 
     public boolean isMetPrik() {
@@ -37,7 +30,8 @@ public class Drinken extends MenuItem {
 
     @Override
     public String toString() {
-        return "Drinken{" + "koud/Warm: " + koudOfWarm + ", Prik: " + metPrik;
+        String strKoud = (koud) ? "koud" : "warm";
+        return "Drinken" + "\tKoud/warm: " + strKoud + ", Prik: " + metPrik;
     }
 
 }

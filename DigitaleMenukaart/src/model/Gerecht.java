@@ -12,28 +12,22 @@ package model;
 public class Gerecht extends MenuItem {
 
     private int rating;
-    private boolean isVegetarisch;
+    private boolean vegetarisch;
 
-    public Gerecht(int rating, boolean isVegetarisch, String naam, double prijs, int calorieen) {
+    public Gerecht(int rating, boolean vegetarisch, String naam, double prijs, int calorieen) {
         super(naam, prijs, calorieen);
         this.rating = rating;
-        this.isVegetarisch = isVegetarisch;
+        this.vegetarisch = vegetarisch;
     }
 
-    public boolean isIsVegetarisch() {
-
-        if (isVegetarisch = true) {
-            System.out.println("Gerecht is vegetarisch ");
-        } else {
-            System.out.println("");
-        }
-        return false;
-
+    public boolean isVegetarisch() {
+        return vegetarisch;
     }
 
     @Override
     public String toString() {
-        return super.toString() + rating + " steren\n" + isIsVegetarisch();
+        String strVegetarisch = (vegetarisch) ? "Gerecht is vegetarisch\n" : "";
+        return super.toString() + "\n" + rating + " sterren\n" + strVegetarisch;
     }
 
 }
