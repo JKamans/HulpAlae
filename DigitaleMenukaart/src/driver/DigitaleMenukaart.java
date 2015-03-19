@@ -39,20 +39,16 @@ public class DigitaleMenukaart {
         for (int i = 0; i < 20; i++) {
             Gerecht gerecht = new Gerecht(5, true, "Pasta" + i, i / 10.0, (int) (Math.random() * 500));
             menuitems.add(gerecht);
-
         }
 
-        //System.out.println("\nVoorgerecht\n");
         Voorgerecht voorgerecht = new Voorgerecht(true, "tomatensoep", 4, true, "chinese tomatensoep", 5.20, 100);
 
-        //System.out.println("\nHoofdgerecht\n");
         Hoofdgerecht hoofdgerecht = new Hoofdgerecht("Pasta carbonara", "paprika,champignons, uien, rookworst", 5, true, "pasta carbonara", 6.0, 150);
-        //System.out.println("\nNagerecht\n");
+
         Nagerecht nagerecht = new Nagerecht("Appeltaart", " gezoete appels, honing , abrikozengelei", 4, true, "oma's appeltaart", 5, 200);
 
         for (int i = 0; i < menuitems.size(); i++) {
             System.out.println(menuitems.get(i));
-
         }
 
         try {
