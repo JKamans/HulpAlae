@@ -21,18 +21,13 @@ public class Voorgerecht extends Gerecht {
     }
 
     public boolean isRauwkost() {
-        rauwkost = true;
-        if (rauwkost = true) {
-            System.out.println("met rauwkost ");
-        } else {
-            System.out.println("zonder rauwkost ");
-        }
-        return false;
+        return rauwkost;
     }
 
     @Override
     public String toString() {
-        return "\nSoort soep: " + soortSoep + "\t" + isRauwkost() + isVegetarisch(); //To change body of generated methods, choose Tools | Templates.
+        String strRauwkost = (rauwkost) ? "met rauwkost" : "zonder rauwkost";
+        return super.toString() +"Soort soep: " + soortSoep + "\t" + strRauwkost + "\n"; //To change body of generated methods, choose Tools | Templates.
     }
 
 }
